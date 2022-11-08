@@ -22,7 +22,7 @@ function commonFun(color) {
         color === DARK_THEME ? toggleDarkLightMode(true) : toggleDarkLightMode(false);
 }
 function toggleDarkLightMode(isDark) {
-    const modeIcon = isDark ? ['fa-sun', 'fa-moon'] : ['fa-moon', 'fa-sun']
+    const modeIcon = isDark ? ['fa-sun', 'fa-moon'] : ['fa-moon', 'fa-sun'];
     nav.style.backgroundColor = isDark ? 'rgba(0 0 0 / 50%)' : 'rgba(255 255 255 / 50%)';
     textBox.style.backgroundColor = isDark ? 'rbg(255 255 255 / 50%)' : 'rbg(0 0 0 / 50%)';
     toggleIcon.children[0].textContent = isDark ? "Dark Mode" : "Light Mode";
